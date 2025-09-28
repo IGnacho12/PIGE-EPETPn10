@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api")
+    fetch("/api")
       .then(response => response.json())
       .then(json => setData(json))   // ✅ acá usamos setData
       .catch(error => console.error("Error fetching data:", error));
