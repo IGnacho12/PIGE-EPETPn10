@@ -5,7 +5,7 @@ import serverless from "serverless-http";
 const app = express();
 
 const corsOption = {
-  origin: ["http://localhost:5173", "https://tudominio.vercel.app"],
+  origin: ["http://localhost:5173", "https://pige-epet-pn10.vercel.app"],
 };
 
 app.use(cors(corsOption));
